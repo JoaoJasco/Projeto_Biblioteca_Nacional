@@ -1,2 +1,2 @@
 # Projeto_Biblioteca_Nacional
-Um sistema web para gestão de bibliotecass pessoais ou institucionais. Seu nome faz referência a Biblioteca Nacional do Rio de Janeiro, a maior do Brasil e uma das maiores e principais do mundo, remontando ao perído do Brasil Império.
+Um sistema web para gestão de bibliotecas pessoais ou institucionais. Seu nome faz referência a Biblioteca Nacional do Rio de Janeiro, a maior do Brasil e uma das maiores e principais do mundo, remontando ao perído do Brasil Império.
