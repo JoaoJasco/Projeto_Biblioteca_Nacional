@@ -29,20 +29,42 @@ nav, li {
 }
 
 @media (max-width: 768px) {
-    nav, li {
+    header, nav, li {
         flex-direction: column; /* Empilha os itens verticalmente */
         align-items: flex-start; /* Alinha ao início (esquerda) por padrão */
         padding: 8px 0;
         max-width: 90%;
+        align-items: center;
     }
+    li {
+        border-bottom: 1.2px solid #c1c1c1; /* Borda inferior discreta */
+        padding-bottom: 8px; /* Espaço para destacar a borda */
+    }    
 }
 
 .main {
     max-width: 1080px; /* Define a largura máxima para boa ergonomia visual */
     margin: 0 auto; /* Centraliza a div no meio da página */
-    padding: 20px; /* Adiciona espaçamento interno para conforto visual */
+    padding: 10px 36px; /* Adiciona espaçamento interno para conforto visual */
     box-sizing: border-box; /* Garante que o padding não ultrapasse a largura máxima */
     background-color: #F8FAFC;
+}
+
+.main-nav a:hover {
+    background-color: #ffcc33;
     
-    
+}
+
+li:hover {
+    background-color: #ffcc33; /* Muda a cor do fundo */
+    transform: scale(1.05); /* Ajusta o tamanho para destacar */
+    transition: all 0.25s ease; 
+    border-radius: 3%;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: x-large;
+       
 }
