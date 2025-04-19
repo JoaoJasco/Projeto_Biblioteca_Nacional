@@ -1,0 +1,27 @@
+body {
+    background-color:rgb(235, 235, 235);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav, li {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 26px;
+    
+}
+
+@media (max-width: 768px) {
+    nav, li {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: flex-start; /* Alinha ao início (esquerda) por padrão */
+        padding: 8px 0;
+    }
+}
