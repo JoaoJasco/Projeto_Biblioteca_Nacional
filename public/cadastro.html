@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Biblioteca Nacional</title>
-    <link rel="stylesheet" href="public/styles/style.css?v=1.0" type="text/css">
+    <link rel="stylesheet" href="styles/style.css?v=1.0" type="text/css">
+    <link rel="stylesheet" href="styles/formstyle.css?v=1.0" type="text/css">
     <!-- CACHE Busting: adicionar uma "query string" ao caminho, como href="public/styles/style.css?v=1.0". Isso ajuda a garantir que mudanças recentes no CSS sejam carregadas. -->
 </head>
 <body>
@@ -15,11 +16,11 @@
         </div>
         
         <nav>
-            <li class="main-nav"><a href="#">home</a></li>
+            <li class="main-nav"><a href="index.html">home</a></li>
             <li class="main-nav"><a href="#">catálogo</a></li>
             <li class="main-nav"><a href="#">busca</a></li>
             <li class="main-nav"><a href="#">login</a></li>
-            <li class="main-nav"><a href="#">cadastro</a></li>
+            <li class="main-nav"><a href="cadastro.html">cadastro</a></li>
 
         </nav>
     </header>
@@ -29,20 +30,31 @@
             <h2>Cadastro de Usuário</h2>
         </header>
               
-        <div class="cadastro">
-            <form class="registration-form">
-                <label for="user">Nome de usuário</label><br />
-                <input type="text" id="user" name="nome" placeholder="Seu nome de usuário...">
-                <br />
+        <div class="cadastro"> <!-- <div class="content"> -->
+            <form class="registration-form"> <!-- <form id="cadastro-form"> -->
+                <!-- NOME / USER -->
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome de usuário...">
                 <span class="error-message" id="nome-error"></span>
                 <br />
 
-                <label for="user">Nome de usuário</label><br />
-                <input type="text" id="user" name="nome" placeholder="Seu nome de usuário...">
-                <br />
+                <!-- e-mail -->
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@provedor.com">
                 <span class="error-message" id="nome-error"></span>
                 <br />
 
+                <!-- SENHA -->
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie a sua senha...">
+                <span class="error-message" id="nome-error"></span>
+                <br />
+
+                <!-- CONFIRMA SENHA -->
+                <label for="confirma-senha">Confirme a senha:</label>
+                <input type="password" id="confirma-senha" name="confirma-senha"  placeholder="Repita a sua senha...">
+                <span class="error-message" id="confirma-senha-error"></span>
+                <br />
 
 
             </form>
