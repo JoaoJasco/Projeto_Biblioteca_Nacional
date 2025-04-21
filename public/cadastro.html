@@ -34,27 +34,29 @@
             <form class="registration-form"> <!-- <form id="cadastro-form"> -->
                 <!-- NOME / USER -->
                 <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome de usuário...">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome de usuário..." required>
                 <span class="error-message" id="nome-error"></span>
                 <br />
 
                 <!-- e-mail -->
                 <label for="email">e-mail:</label>
-                <input type="email" id="email" name="email" placeholder="email@provedor.com">
+                <input type="email" id="email" name="email" placeholder="email@provedor.com" required>
                 <span class="error-message" id="nome-error"></span>
                 <br />
 
                 <!-- SENHA -->
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Crie a sua senha...">
+                <input type="password" id="senha" name="senha" placeholder="Crie a sua senha..." required>
                 <span class="error-message" id="nome-error"></span>
                 <br />
 
                 <!-- CONFIRMA SENHA -->
                 <label for="confirma-senha">Confirme a senha:</label>
-                <input type="password" id="confirma-senha" name="confirma-senha"  placeholder="Repita a sua senha...">
+                <input type="password" id="confirma-senha" name="confirma-senha"  placeholder="Repita a sua senha..." required>
                 <span class="error-message" id="confirma-senha-error"></span>
                 <br />
+
+                <button type="submit">CADASTRAR</button>
 
 
             </form>
@@ -65,6 +67,28 @@
 
     </div>
     <script>
+        function validarEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // validação requisitos de senha
+        function validarTamanhoSenha(senha){
+            return senha.legth >= 6;
+        }
+
+        function validarLetraMaiuscula(senha) {
+            return /[A-Z]/.test(senha);
+        }
+        
+        function validarNumero(senha) {
+            return /[0-9]/.test(senha);
+        }
+
+
+
+        
+
         // validação dos campos de usuário: client-side
         document.getElementById('nome').addEventListener('input', function(){
             const nome = this.value.trim();

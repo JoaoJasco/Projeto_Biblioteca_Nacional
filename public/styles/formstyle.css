@@ -13,3 +13,19 @@ input {
     transition: border 0.3s;
 }
 
+button{
+    background: #ffcc33;
+    border: none;
+    padding: 14px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.5s ease-in;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background: #ffd969;
+}
