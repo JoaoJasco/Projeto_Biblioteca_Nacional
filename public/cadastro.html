@@ -64,6 +64,29 @@
         </div>
 
     </div>
-    <script src="public/js/"></script>
+    <script>
+        // validação dos campos de usuário: client-side
+        document.getElementById('nome').addEventListener('input', function(){
+            const nome = this.value.trim();
+
+            if (nome.legth > 0 && nome.length < 3){
+                mostrarErro('nome', 'O nome deve possuir ao menos 3 caracteres!');
+            } else {
+                limparErro('nome');
+            }
+        });
+
+        document.getElementById('email').addEventListener('input', function() {
+            const email = this.value.trim();
+            
+            if (email && !validarEmail(email)) {
+                mostrarErro('email', 'Digite um email válido');
+            } else {
+                limparErro('email');
+            }
+        });
+
+
+    </script>
 </body>
 </html>
