@@ -1,3 +1,10 @@
+.cadastro {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left; /* Mantém o alinhamento do texto à esquerda */
+}
+
+
 label {
     display: block;
     margin-bottom: 7px;
@@ -11,6 +18,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     transition: border 0.3s;
+    box-sizing: border-box;
 }
 
 button{
@@ -24,8 +32,10 @@ button{
     transition: background 0.5s ease-in;
     display: block;
     width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
     background: #ffd969;
+    color: rgb(51, 117, 249);
 }
